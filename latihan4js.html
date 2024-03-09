@@ -1,0 +1,45 @@
+<script>
+  // variabel
+  let pelanggan = "siti";
+  let produk = "AC";
+
+  //tv = 3jt, kulkas = 4jt, AC = 5 jt
+
+  if (produk == "TV") {
+    hargaSatuan = 3000000;
+  } else if (produk == "Kulkas") {
+    hargaSatuan = 4000000;
+  } else if (produk == "AC") {
+    hargaSatuan = 5000000;
+  } else {
+    hargaSatuan = 0;
+  }
+
+  //  let hargaSatuan= 0;
+  //     switch(produk){
+  //       case 'TV' hargaSatuan = 3000000; break;
+  //       case 'Kulkas' hargaSatuan = 3000000; break;
+  //       case 'AC' hargaSatuan = 3000000; break;
+  //       default: hargaSatuan = 0;
+  //     }
+
+  let jmlBeli = 15;
+  let bruto = hargaSatuan * jmlBeli;
+
+  //ternary
+  let diskon = produk == "AC" ? 0.1 + bruto : 0;
+
+  document.write(
+    "Data Pembelian" +
+      "<br> Pelanggan :" +
+      pelanggan +
+      "<br> Produk Pilihan :" +
+      produk +
+      "<br> Harga Satuan :" +
+      hargaSatuan +
+      "<br> Harga Kotor :" +
+      bruto +
+      "<br> Diskon :" +
+      diskon
+  );
+</script>

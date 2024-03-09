@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch case</title>
+  </head>
+  <body>
+    <script>
+      // deklasrasi dan inisialisasi variabel
+      let mahasiswa = "Farwis Ilmi";
+      let nilai = 75;
+      let grade = "";
+      let predikat = "";
+
+      //switch case
+      switch (grade) {
+        case "A":
+          predikat = "Sangat Memuaskan";
+          break;
+        case "B":
+          predikat = "Baik";
+          break;
+        case "C":
+          predikat = "Cukup";
+          break;
+        case "D":
+          predikat = "Kurang";
+          break;
+        case "E":
+          predikat = "Buruk";
+          break;
+        default:
+          predikat = "";
+          break;
+      }
+
+      //   print output
+      document.write(
+        "Mahasiswa Bernama " +
+          mahasiswa +
+          " dengan nilai " +
+          nilai +
+          " dengan gradenya " +
+          grade
+      );
+    </script>
+  </body>
+</html>

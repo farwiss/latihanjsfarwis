@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IF - Multi Kondisi</title>
+  </head>
+  <body>
+    <script>
+      // deklarasi dan inisialisasi variabel
+      let mahasiswa = "Farwis Ilmi ";
+      let nilai = 84;
+      let grade = "";
+
+      // if multi kondisi
+      if (nilai > 85 && nilai <= 100) grade = "A";
+      else if (nilai > 75 && nilai <= 85) grade = "B";
+      else if (nilai > 60 && nilai <= 75) grade = "C";
+      else if (nilai > 30 && nilai <= 60) grade = "D";
+      else if (nilai > 0 && nilai <= 30) grade = "E";
+      else grade = "";
+
+      //print output
+      document.write(
+        "Mahasiswa bernama " +
+          mahasiswa +
+          "dengan nilai " +
+          nilai +
+          " mendapatkan grade " +
+          grade
+      );
+    </script>
+  </body>
+</html>
