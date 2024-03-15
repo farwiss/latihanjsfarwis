@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h2>Nama Nama Buah</h2>
+    <script>
+      // deklarasi array
+      // array dimulai dari index 0
+      var buah = ["Pepaya", "Mangga", "Pisang", "Jambu"];
+
+      //   length adalah library untuk melihat panjang data yang ada
+
+      // mengganti index [2]
+      buah[2] = "Jeruk";
+
+      for (var i = 0; i < buah.length; i++) {
+        document.write("<br> " + buah[i]);
+      }
+    </script>
+    <script>
+      // array object
+      let p1 = { nama: "Andi", divisi: "SDM", gaji: "7000000" };
+      let p2 = { nama: "Budi", divisi: "Marketing", gaji: "8000000" };
+      let p3 = { nama: "Charlie", divisi: "Lapangan", gaji: "5000000" };
+
+      //   menambahkan array didalam array
+      let pegawai = [p1, p2, p3];
+
+      for (let i = 0; i < pegawai.length; i++) {
+        document.write("<br> " + pegawai[i]);
+      }
+
+      //   menampilkan output
+      for (p of pegawai) {
+        document.write("<br> " + p.nama);
+        document.write("<br> " + p.divisi);
+        document.write("<br> " + p.gaji);
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
